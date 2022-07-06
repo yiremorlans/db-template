@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const MongoClient = require('mongodb').MongoClient
-require('dotenv').config()
+require('dotenv').config() 
 
 
 let db,
@@ -18,4 +18,7 @@ MongoClient.connect(dbConnectionString)
         collection = db.collection('superdevs')
     })
 
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Listening on port.`)
+})
 //VARIABLES FOR SETTING MIDDLEWEAR
