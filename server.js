@@ -18,11 +18,11 @@ MongoClient.connect(dbConnectionString)
         collection = db.collection('superdevs')
     })
 //VARIABLES FOR SETTING MIDDLEWEAR
-app.set('view engine', 'ejs') 
+app.set('view engine', 'ejs') //set the view engine to handle ejs
 app.use(express.static('public')) //all client side files 
 app.use(express.urlencoded({extended:true})) //parse urls that are being sent back and forth
 app.use(express.json()) //help express parse and read that data sent
-app.use(cors())
+app.use(cors()) //allows app and database use through localhost
 
 
 

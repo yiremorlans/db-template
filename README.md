@@ -5,6 +5,8 @@
 
 //3. Declare variables
 
+//----From root, init local git repo and commit
+
 //7. Create gitignore file and push to github
 
 //4. Connect to MongoDB - add connection string to .env file
@@ -19,7 +21,7 @@
 
 //8. Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
 
-//9. From root, init local git repo and commit
+//9. Add content to main.js, style.css, index.ejs
 
 //10. Create heroku repo
 
