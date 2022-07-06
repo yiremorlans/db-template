@@ -23,7 +23,9 @@
 
 //9. Add content to main.js, style.css, index.ejs
 
-//10. Create heroku repo
+//10. Add READ request on server.js to the root '/' to render the ejs file.
+
+//11. Create heroku repo
 
 // heroku login
 // heroku create simple-rap-api

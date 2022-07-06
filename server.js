@@ -24,8 +24,13 @@ app.use(express.urlencoded({extended:true})) //parse urls that are being sent ba
 app.use(express.json()) //help express parse and read that data sent
 app.use(cors()) //allows app and database use through localhost
 
-
-
+app.get('/', async (req, res) => {
+    try {
+        res.render('index.ejs')
+    } catch (error) {
+        res.status(500).send({message: error.message})
+    }
+})
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Listening on port.`)
 })
